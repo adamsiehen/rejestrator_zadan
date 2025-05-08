@@ -1,7 +1,7 @@
 # ServiceDesk API (Django REST Framework)
 
 Projekt na zaliczenie przedmiotu Aplikacje WWW w ramach studiów podyplomowych Informatyka Stosowana na UWM.
-Prosty system zarządzania zgłoszeniami serwisowymi typu ServiceDesk, zbudowany w Django + DRF.
+Prosty system zarządzania zgłoszeniami serwisowymi typu ServiceDesk, zbudowany w Django.
 
 ## Funkcje
 - Rejestracja i logowanie z tokenem (Token Auth)

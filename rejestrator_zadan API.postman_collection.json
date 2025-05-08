@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "b1165db8-7b67-4094-a8f8-ead252d94ec5",
+		"name": "ServiceDesk API",
+		"description": "Postman collection to test Service Desk endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13343129"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"alex\",\r\n  \"email\": \"alex@example.com\",\r\n  \"password\": \"mojehaslo123\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"janek\", \"password\": \"mojehaslo123\"}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Ticket",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\": \"Nie dzia\\u0142a drukarka\", \"description\": \"Drukarka w pokoju 102 wy\\u015bwietla b\\u0142\\u0105d.\", \"status\": \"new\", \"category\": 1}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tickets/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tickets",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Tickets",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tickets/user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tickets",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ticket Stats",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tickets/stats",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tickets",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

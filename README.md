@@ -1,4 +1,4 @@
-# ServiceDesk API (Django REST Framework)
+# rejestrator_zadan (Django REST Framework)
 
 Projekt na zaliczenie przedmiotu Aplikacje WWW w ramach studiów podyplomowych Informatyka Stosowana na UWM.
 

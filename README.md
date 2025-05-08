@@ -34,9 +34,13 @@ python manage.py runserver
 
 ## Opis działania aplikacji
 Aplikacja składa się z 4 modeli:
-Categorys
-Tickets
-Comments
+
+Categorys,
+
+Tickets,
+
+Comments,
+
 Ticket attachments
 
 
